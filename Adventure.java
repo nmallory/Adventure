@@ -9,6 +9,8 @@ public class Adventure {
 		String name = "";
 		String yes = "Yes";
 		String answer = "";
+		String weapon = "";
+		String color = "";
 		int option = 0; 
 	
 		
@@ -17,6 +19,7 @@ public class Adventure {
 		System.out.println("Welcome! What is your name (enter your name): ");
 		name = input.next();
 		
+	
 		System.out.println("Would you like to play a game? (enter 'yes' or 'no'): ");
 		yes = input.next();
 			if (yes.equalsIgnoreCase("yes")){
@@ -46,24 +49,61 @@ public class Adventure {
 				
 				switch(option){
 				case 1:
-					System.out.println("No one has ever faced a 1-headed dragon before!");
+					System.out.println("No one has ever faced a 1-headed dragon before! Choose your weapon. (enter 'slingshot' or 'sword' or 'bow and arrow')");
 					break;
 					
 				case 2:
-					System.out.println("No one has ever faced a 2-headed dragon before!");
+					System.out.println("No one has ever faced a 2-headed dragon before! Choose your weapon. (enter 'slingshot' or 'sword' or 'bow and arrow')");
 					break;
 					
 				case 3:
-					System.out.println("No one has ever faced a 3-headed dragon before!");
+					System.out.println("No one has ever faced a 3-headed dragon before! Choose your weapon. (enter 'slingshot' or 'sword' or 'bow and arrow')");
+					break;
+				
+				}
+				
+				weapon = input.nextLine();
+				input.nextLine();		
+				
+				switch(weapon){
+				case "slingshot":
+					
+					System.out.println("No one has ever faced a 1-headed dragon before! Choose your weapon. (enter 'slingshot' or 'sword' or 'bow and arrow'");
+					break;
+					
+				case "sword":
+					
+					System.out.println("No one has ever faced a 1-headed dragon before! Choose your weapon. (enter 'slingshot' or 'sword' or 'bow and arrow'");
+					break;
+					
+				case "bow and arrow":
+					System.out.println("No one has ever faced a 1-headed dragon before! Choose your weapon. (enter 'slingshot' or 'sword' or 'bow and arrow'");
 					break;
 				
 				}
 					
+				System.out.println("Armed with your bow and arrow, you approach the dragon. You can feel its fiery breath as you get closer. It stares at you with its eyes (enter 'red' or 'blue')");
+				
+				color = input.nextLine();
+				input.nextLine();
+				
+				switch(color){
+				
+				case "red":
+					System.out.println("Oh thank goodness! Red-eyed dragons are friendly. You pet it and become friends.");
+					break;
+				
+				case "blue":
+					System.out.println("Oh no! Blue-eyed dragons are mean. You pet it and it growls.");
+					break;
+				}
+				
+				
+			}
 				
 		}
-				
-	}
 		
 }
 		
+	
 	
